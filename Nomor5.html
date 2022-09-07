@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+</head>
+<body>
+    <h1 id="Judul">Judul Dari Halaman</h1>
+    <h1 id="Tes">Uji Coba</h1>
+    <p id="Paragraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quis, atque, nemo quasi placeat soluta sunt dolorum sint facilis temporibus minima, dolores minus nihil quo ut ab. Debitis, fugiat adipisci?</p>
+    <img src="Tennis.jpg" id="Duplikat">
+    <script>
+        var Latihan=document.getElementById("Paragraf");
+        Paragraf.style.color="blue";
+
+        var Gambar = document.createElement("img");
+         Gambar.src = "AO.jpg";
+         document.body.append(Gambar);
+
+         var Hapus=document.getElementById("Tes");
+        Tes.remove();
+
+        var Coba=document.getElementById("Duplikat")
+        Duplikat.style.backgroundColor="green";
+        Duplikat.style.padding="50px";
+    </script>
+</body>
+</html>
